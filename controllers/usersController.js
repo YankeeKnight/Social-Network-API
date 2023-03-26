@@ -3,8 +3,8 @@ const { Users } = require('../models');
 const usersController = {
 
     //create new user
-    createUsers({ body }, res) {
-        Users.create(body)
+    createUsers(req, res) {
+        Users.create(req.body)
             .then(dbUsersData => res.json(dbUsersData))
             .catch(err => res.status(400).json(err));
     },
@@ -42,7 +42,7 @@ const usersController = {
     },
 
     //update user by ID
-    udpateUsers({ params, body }, res) {
+    updateUsers({ params, body }, res) {
         Users.findOneAndUpdate({ _id: params.id }, body, { new: true, runValidators: true })
             .then(dbUsersData => {
                 if (!dbUsersData) {
