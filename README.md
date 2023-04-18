@@ -13,7 +13,7 @@ The user would clone the repository from GitHub and download Node. The applicati
 Can be tested through Insomnia Core.
 
 ## Walkthrough
-[Video Walkthrough Link](https://drive.google.com/file/d/1LGAe_RcwI2N3NBC8F26A3oq03-EOP2-8/view?usp=sharing)
+[Video Walkthrough Link](https://drive.google.com/file/d/1MM4QpzImPo9MWZJ_rkspCJR3SbMrVJEJ/view?usp=sharing)
 
 ## Tests
 The application's API routes can be tested in Insomnia Core.
